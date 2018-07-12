@@ -1,0 +1,19 @@
+packages:
+  hello_package:
+    actions:
+       say_hello:
+        location: src/hello_function.js
+        runtime: nodejs:6
+        inputs:
+          greeting: "Hello, "
+          name: String
+    triggers:
+        greeting_trigger:
+          feed: @FEED_BASE@/messageHubFeed
+          inputs:
+            isJSONData: string
+            topic: greet_user  
+    rules:
+        greeting_rule:
+          action: say_hello
+          trigger: greeting_trigger
