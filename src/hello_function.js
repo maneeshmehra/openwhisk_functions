@@ -1,14 +1,20 @@
+/**
+  *
+  * main() will be run when you invoke this action
+  *
+  * @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+  *
+  * @return The output of this action, which must be a JSON object.
+  *
+  */
 'use strict';
 
 function main(params) {
-   console.log('Hello function called');
+   console.log('Hello function called with: ' + JSON.stringify(params));
    var greeting = params.greeting;
-   var name = params.name;
+   var user = params.user;
 
-   console.log('Greeting: ' + greeting);
-   console.log('Name: ' + name);
-
-   var message = greeting + ", " + name;
+   var message = greeting + ", " + user;
    return {
       "Message": message,
       "Status": "Success",
