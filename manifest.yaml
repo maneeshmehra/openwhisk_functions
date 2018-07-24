@@ -6,13 +6,13 @@ packages:
         runtime: nodejs:6
         inputs:
           greeting: "Hello, "
-          name: String
+          user: String
     triggers:
         greeting_trigger:
           feed: @FEED_BASE@/messageHubFeed
           inputs:
             isJSONData: string
-            topic: greet_user  
+            topic: GreetAll  
     rules:
         greeting_rule:
           action: say_hello
