@@ -5,8 +5,8 @@ packages:
         location: src/hello_function.js
         runtime: nodejs:6
         inputs:
-          greeting: "Hello, "
-          user: String
+          greeting: "Hello"
+          user: "World"
     triggers:
         greeting_trigger:
           feed: @FEED_BASE@/messageHubFeed
