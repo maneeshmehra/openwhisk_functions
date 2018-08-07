@@ -1,5 +1,5 @@
 packages:
-  hello_package:
+  greeting_package:
     actions:
        say_hello:
         location: src/hello_function.js
