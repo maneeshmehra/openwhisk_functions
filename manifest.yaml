@@ -12,7 +12,7 @@ packages:
           feed: @FEED_BASE@/messageHubFeed
           inputs:
             isJSONData: true
-            topic: GreetAll  
+            topic: Greeter 
     rules:
         greeting_rule:
           action: say_hello
