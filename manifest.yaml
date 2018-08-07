@@ -8,7 +8,7 @@ packages:
           greeting: "Hello"
           user: "World"
     triggers:
-        greeting_trigger:
+        greeeting_trigger:
           feed: @FEED_BASE@/messageHubFeed
           inputs:
             isJSONData: true
@@ -16,4 +16,4 @@ packages:
     rules:
         greeting_rule:
           action: say_hello
-          trigger: greeting_trigger
+          trigger: greeeting_trigger
