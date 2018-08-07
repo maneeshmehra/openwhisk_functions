@@ -11,7 +11,7 @@ packages:
         greeting_trigger:
           feed: @FEED_BASE@/messageHubFeed
           inputs:
-            isJSONData: string
+            isJSONData: true
             topic: GreetAll  
     rules:
         greeting_rule:
